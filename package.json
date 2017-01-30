@@ -7,6 +7,8 @@
     "url": "git+https://github.com/Solorad/realtime-geolocation-demo-master.git"
   },
   "scripts": {
+    "webpack-watch": "webpack -w",
+    "express-server": "node ./server",
     "build": "rimraf dist && webpack --bail --progress --profile",
     "server": "webpack-dev-server --history-api-fallback --inline --progress",
     "test": "karma start",
@@ -38,12 +40,14 @@
     "karma-spec-reporter": "0.0.26",
     "karma-webpack": "2.0.1",
     "node-libs-browser": "2.0.0",
+    "node-static" : "0.7.9",
     "null-loader": "^0.1.1",
     "phantomjs-prebuilt": "^2.1.4",
     "postcss-loader": "1.2.2",
     "raw-loader": "^0.5.1",
     "rimraf": "^2.5.1",
     "style-loader": "^0.13.0",
+    "express": "latest",
     "webpack": "2.2.0",
     "webpack-dev-server": "2.2.0"
   }

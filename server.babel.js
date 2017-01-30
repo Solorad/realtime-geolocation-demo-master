@@ -4,12 +4,12 @@ var app = http.createServer(handler);
 var io = require('socket.io').listen(app);
 var port = 3000;
 
-var files = new Static.Server('./public');
+var files = new Static.Server('./client/public');
 
 function handler (request, response) {
-	request.on('end', function() {
-		files.serve(request, response);
-	}).resume();
+  request.on('end', function() {
+    files.serve(request, response);
+  }).resume();
 }
 
 // start app on specified port
