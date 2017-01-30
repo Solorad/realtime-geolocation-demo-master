@@ -8,13 +8,7 @@
     "url": "git+https://github.com/Solorad/realtime-geolocation-demo-master.git"
   },
   "scripts": {
-    "start": "node server.js",
-    "watch": "webpack --watch -d",
-    "eslint": "eslint .; exit 0",
-    "eslint-components": "eslint src/main/resources/static; exit 0",
-    "build": "webpack node server.js",
-    "serve": "webpack node server.js",
-    "prod": "webpack -p node server.js"
+    "start": "webpack-dev-server -d --colors"
   },
   "version": "0.0.1",
   "engines": {
@@ -37,6 +31,7 @@
     "axios": "^0.15.3",
     "react-addons-css-transition-group": "^15.3.0",
     "extract-text-webpack-plugin" : "^1.0.1",
-    "webpack": "2.2.0-rc.0",
+    "webpack": "2.2.0",
+    "webpack-dev-server": "2.2.0"
   }
 }
