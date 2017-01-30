@@ -1,0 +1,16 @@
+{
+  "name": "geotest",
+  "subdomain": "geotest",
+  "author": "Evgenii Morenkov <yarad8613i@gmail.com>",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "version": "0.0.1",
+  "engines": {
+    "node": ">= 0.8.x"
+  },
+  "dependencies": {
+    "node-static": "latest",
+    "node-geolocation": "1.15.14"
+  }
+}
