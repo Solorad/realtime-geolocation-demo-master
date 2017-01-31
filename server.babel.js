@@ -2,9 +2,9 @@ var http = require('http');
 var Static = require('node-static');
 var app = http.createServer(handler);
 var io = require('socket.io').listen(app);
-var port = 3000;
+var port = 8080;
 
-var files = new Static.Server('./client/public');
+var files = new Static.Server('./dist');
 
 function handler (request, response) {
   request.on('end', function() {
